@@ -1,0 +1,87 @@
+/*TEXT*/
+#u421-4 p, #u424-4 p, #u427-4 p, #u433-4, #u766-8 p, #u1204-8 p{
+    animation-name: textblur;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes textblur {
+    0% {    -webkit-filter:blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px);
+    filter: blur(8px);}
+    25% {    -webkit-filter:blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);}
+    50% {    -webkit-filter:blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px);
+    filter: blur(8px);}
+    75% {    -webkit-filter:blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);}
+    100% {    -webkit-filter:blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px);
+    filter: blur(8px);}
+}
+/*BACK*/
+#u164, #u762{
+    animation-name: backglow;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes backglow{
+    0%{ background-color:#afafaf; }
+    25%{ background-color:#4444ff; }
+    50%{ background-color:#7f7f7f; }
+    75%{ background-color:#44ff44; }
+    100%{ background-color:#afafaf; }
+}
+
+#u639{
+    animation-name: backfade;
+    animation-duration: 32s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes backfade{
+    0%{ -webkit-filter:blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px);
+    filter: blur(8px);
+    opacity: 0.1;}
+    25%{ -webkit-filter:blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px); 
+    opacity: 0.05;}
+    50%{ -webkit-filter:blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px);
+    filter: blur(8px); 
+    opacity: 0.2;}
+    75%{ -webkit-filter:blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px); 
+    opacity: 0.01;}
+    100%{ -webkit-filter:blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px);
+    filter: blur(8px); 
+    opacity: 0.1;}
+}
