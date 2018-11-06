@@ -35,3 +35,8 @@
   width: 150px;
   border-radius: 50%;
 }
+
+/* If you want the content centered horizontally and vertically */
+.lined {
+  display: inline-block;
+}
