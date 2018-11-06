@@ -37,6 +37,12 @@
 }
 
 /* If you want the content centered horizontally and vertically */
-.lined {
+.linedright {
+  right: 0;
+  display: inline-block;
+}
+
+.linedleft {
+  left: 0;
   display: inline-block;
 }
