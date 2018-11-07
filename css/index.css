@@ -46,3 +46,13 @@
   left: 0;
   display: inline-block;
 }
+
+@font-face {
+  font-family:"DejaVuSans";
+  src: url("/fonts/DejaVuSansMono.ttf") format("truetype");
+}
+
+@font-face {
+  font-family:"DejaVuSansBold";
+  src: url("/fonts/DejaVuSansMono-Bold.ttf") format("truetype");
+}
