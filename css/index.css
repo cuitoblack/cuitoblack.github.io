@@ -47,12 +47,32 @@
   display: inline-block;
 }
 
+.buttonStyle {
+  margin:auto;
+  display:block;
+  border:2px solid black;
+  height:40px;
+  width:120px;
+}
+
+p {
+  font-family:'DejaVuSans';
+}
+
+h2 {
+  font-family:'DejaVuSansBold';
+}
+
 @font-face {
   font-family:"DejaVuSans";
-  src: url("/fonts/DejaVuSansMono.ttf") format("truetype");
+  src: url("/fonts/DejaVuSansMono.eot"),
+       url("/fonts/DejaVuSansMono.ttf") format("truetype"),
+       url("/fonts/DejaVuSansMono.woff") format("woff");
 }
 
 @font-face {
   font-family:"DejaVuSansBold";
-  src: url("/fonts/DejaVuSansMono-Bold.ttf") format("truetype");
+  src: url("/fonts/DejaVuSansMono-Bold.eot"),
+       url("/fonts/DejaVuSansMono-Bold.ttf") format("truetype"),
+       url("/fonts/DejaVuSansMono-Bold.woff") format("woff");
 }
