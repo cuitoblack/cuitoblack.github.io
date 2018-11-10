@@ -48,7 +48,8 @@
 }
 
 .buttonStyle {
-  border: 2px solid black;
+  margin: auto;
+  border: 1px solid black;
   height: 40px;
   width: 120px;
   font-family:'DejaVuSans';
