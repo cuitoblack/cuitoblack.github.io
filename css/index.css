@@ -64,6 +64,7 @@ h2 {
 }
 
 .popup {
+    padding: 15px 15px;
     text-align: center;
     position: fixed;
     border: 1px solid black;
