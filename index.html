@@ -16,6 +16,18 @@
   <script type="text/javascript" src="scripts/javascript.js"></script>
    </head>
 
+  <script type="text/javascript"> 
+
+	function stopRKey(evt) { 
+  		var evt = (evt) ? evt : ((event) ? event : null); 
+  		var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null); 
+  		if ((evt.keyCode == 13) && (node.type=="text"))  {return false;} 
+	} 
+
+	document.onkeypress = stopRKey; 
+
+  </script>
+
  <body>
 <div id="mainContainer">
   <div class="split left">
@@ -228,15 +240,15 @@
 		<fieldset>
                   <div class="radioContainer" style="display: inline;">
 		    <div class="control__indicator" style="display: inline;"></div>
-		    <button type="button" class="buttonStyleRadio" style="display:inline;"></button>
+		    <button id="kak" type="button" class="buttonStyleRadio" style="display:inline;" onclick="chooseKak()"></button>
                     <input type="radio" class="radio" name="x" value="a" id="a" style="display: inline;" />
                     <label for="a" style="display: inline;">KAK &emsp;</label>
 		    <div class="control__indicator" style="display: inline;"></div>
-		    <button type="button" class="buttonStyleRadio" style="display:inline;"></button>
+		    <button id="lekker" type="button" class="buttonStyleRadio" style="display:inline;" onclick="chooseLekker()"></button>
                     <input type="radio" class="radio" name="x" value="y" id="y" style="display: inline;" />
                     <label for="y" style="display: inline;">LEKKER &emsp;</label>
 		    <div class="control__indicator" style="display: inline;"></div>
-		    <button type="button" class="buttonStyleRadio" style="display:inline;"></button>
+		    <button id="kaklekker" type="button" class="buttonStyleRadio" style="display:inline;" onclick="chooseKakLekker()"></button>
                     <input type="radio" class="radio" name="x" value="z" id="z" style="display: inline;" />
                     <label for="z" style="display: inline;">KAK LEKKER</label>
                   </div>
