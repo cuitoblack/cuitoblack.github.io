@@ -224,16 +224,21 @@
 		</br>
     		<p>ARE YOU KAK OR LEKKER?</p>
 	        </br>
-		<fieldset>
-                  <div class="radioContainer">
-                    <input type="radio" class="radio" name="x" value="a" id="a" />
-                    <label for="a">KAK</label>
-                    <input type="radio" class="radio" name="x" value="y" id="y" />
-                    <label for="y">LEKKER</label>
-                    <input type="radio" class="radio" name="x" value="z" id="z" />
-                    <label for="z">KAK LEKKER</label>
-                  </div>
-                </fieldset>
+		<div class="control-group">
+		<h1>Radio buttons</h1>
+		<label class="control control--radio">KAK  
+			<input type="radio" name="radio" checked="checked"/>
+			<div class="control__indicator"></div>
+		</label>
+		<label class="control control--radio">LEKKER  
+			<input type="radio" name="radio"/>
+			<div class="control__indicator"></div>
+		</label>
+		<label class="control control--radio">KAK LEKKER
+			<input type="radio" name="radio"/>
+			<div class="control__indicator"></div>
+		</label>
+		</div>
                 </br>
 		</br>
 		<div style="border-bottom: 1px solid black;">
