@@ -13,19 +13,19 @@ function sendEmail() {
 }
 
 function chooseKak() {
-  document.getElementById("lekker").style.background-color = "white";
-  document.getElementById("kaklekker").style.background-color = "white";
-  document.getElementById("kak").style.background-color = "black";
+  document.getElementById("lekker").style.backgroundColor = "white";
+  document.getElementById("kaklekker").style.backgroundColor = "white";
+  document.getElementById("kak").style.backgroundColor = "black";
 }
 
 function chooseLekker() {
-  document.getElementById("kak").style.background-color = "white";
-  document.getElementById("kaklekker").style.background-color = "white";
-  document.getElementById("lekker").style.background-color = "black";
+  document.getElementById("kak").style.backgroundColor = "white";
+  document.getElementById("kaklekker").style.backgroundColor = "white";
+  document.getElementById("lekker").style.backgroundColor = "black";
 }
 
 function chooseKakLekker() {
-  document.getElementById("lekker").style.background-color = "white";
-  document.getElementById("kak").style.background-color = "white";
-  document.getElementById("kaklekker").style.background-color = "black";
+  document.getElementById("lekker").style.backgroundColor = "white";
+  document.getElementById("kak").style.backgroundColor = "white";
+  document.getElementById("kaklekker").style.backgroundColor = "black";
 }
