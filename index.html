@@ -69,6 +69,44 @@
 			</td>
 		</tr>
 	</table>
+
+	<div id="myForm" class="popup" style="display:none;">
+		<button type="button" class="buttonStyleThree" onclick="closeForm()">X</button>
+                <h2><b>TICKETS</b></h2>
+		</br>
+		</br>
+    		<p>WE SEND OUR TICKET INFO VIA EMAIL</p>
+		<p>FOLLOW THE INSTRUCTIONS BELOW</p>
+		</br>
+		</br>
+    		<p>ARE YOU KAK OR LEKKER?</p>
+	        </br>
+		<fieldset>
+                  <div class="radioContainer" style="display: inline;">
+		    <div class="control__indicator" style="display: inline;"></div>
+		    <button id="kak" type="button" class="buttonStyleRadio" style="display:inline;" onclick="chooseKak()"></button>
+                    <input type="radio" class="radio" name="x" value="a" id="a" style="display: inline;" />
+                    <label for="a" style="display: inline;">KAK &emsp;</label>
+		    <div class="control__indicator" style="display: inline;"></div>
+		    <button id="lekker" type="button" class="buttonStyleRadio" style="display:inline;" onclick="chooseLekker()"></button>
+                    <input type="radio" class="radio" name="x" value="y" id="y" style="display: inline;" />
+                    <label for="y" style="display: inline;">LEKKER &emsp;</label>
+		    <div class="control__indicator" style="display: inline;"></div>
+		    <button id="kaklekker" type="button" class="buttonStyleRadio" style="display:inline;" onclick="chooseKakLekker()"></button>
+                    <input type="radio" class="radio" name="x" value="z" id="z" style="display: inline;" />
+                    <label for="z" style="display: inline;">KAK LEKKER</label>
+                  </div>
+                </fieldset>
+                </br>
+		</br>
+		<div style="border-bottom: 1px solid black;">
+		  <input type="text" name="fname" placeholder="insert email" style="display:inline;"><button type="button" class="buttonStyleTwo" onclick="sendEmail()" style="display:inline;">SEND</button>
+		</div>
+		</br>
+		<p id="successMessage" style="text-align:center;visibility:hidden;">DONE! CHECK YOUR INBOX</p>
+		</br>
+		</br>
+        </div>
   </div>
 
   <div class="split right">
@@ -227,43 +265,7 @@
 		</br>
 	</div>
   </div>
-  <div id="myForm" class="popup" style="display:none;">
-		<button type="button" class="buttonStyleThree" onclick="closeForm()">X</button>
-                <h2><b>TICKETS</b></h2>
-		</br>
-		</br>
-    		<p>WE SEND OUR TICKET INFO VIA EMAIL</p>
-		<p>FOLLOW THE INSTRUCTIONS BELOW</p>
-		</br>
-		</br>
-    		<p>ARE YOU KAK OR LEKKER?</p>
-	        </br>
-		<fieldset>
-                  <div class="radioContainer" style="display: inline;">
-		    <div class="control__indicator" style="display: inline;"></div>
-		    <button id="kak" type="button" class="buttonStyleRadio" style="display:inline;" onclick="chooseKak()"></button>
-                    <input type="radio" class="radio" name="x" value="a" id="a" style="display: inline;" />
-                    <label for="a" style="display: inline;">KAK &emsp;</label>
-		    <div class="control__indicator" style="display: inline;"></div>
-		    <button id="lekker" type="button" class="buttonStyleRadio" style="display:inline;" onclick="chooseLekker()"></button>
-                    <input type="radio" class="radio" name="x" value="y" id="y" style="display: inline;" />
-                    <label for="y" style="display: inline;">LEKKER &emsp;</label>
-		    <div class="control__indicator" style="display: inline;"></div>
-		    <button id="kaklekker" type="button" class="buttonStyleRadio" style="display:inline;" onclick="chooseKakLekker()"></button>
-                    <input type="radio" class="radio" name="x" value="z" id="z" style="display: inline;" />
-                    <label for="z" style="display: inline;">KAK LEKKER</label>
-                  </div>
-                </fieldset>
-                </br>
-		</br>
-		<div style="border-bottom: 1px solid black;">
-		  <input type="text" name="fname" placeholder="insert email" style="display:inline;"><button type="button" class="buttonStyleTwo" onclick="sendEmail()" style="display:inline;">SEND</button>
-		</div>
-		</br>
-		<p id="successMessage" style="text-align:center;visibility:hidden;">DONE! CHECK YOUR INBOX</p>
-		</br>
-		</br>
-        </div>
+  
   
 </div>
 </br>
