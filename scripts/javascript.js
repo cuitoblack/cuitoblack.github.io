@@ -9,5 +9,5 @@ function closeForm() {
 }
 
 function sendEmail() {
-  document.getElementById("successMessage").style.display = "block";
+  document.getElementById("successMessage").style.visibility = "visible";
 }
