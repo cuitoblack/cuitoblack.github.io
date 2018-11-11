@@ -72,6 +72,15 @@
   left:3px;
 }
 
+.control__indicator {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	background: #e6e6e6;
+}
+
 p {
   font-family:'DejaVuSans';
 }
