@@ -73,6 +73,15 @@ h2 {
     transform: translate(-50%, -50%);
 }
 
+label {
+  display: inline;
+}
+
+input[type=radio],
+input.radio {
+  display: inline;
+}
+
 @font-face {
   font-family:"DejaVuSans";
   src: url("/fonts/DejaVuSansMono.eot"),
