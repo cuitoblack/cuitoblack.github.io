@@ -92,6 +92,11 @@ label {
   display: inline;
 }
 
+button {
+  color: white;
+  background-color: white;
+}
+
 input[type=radio],
 input.radio {
   display: inline;
