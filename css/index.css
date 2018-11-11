@@ -55,6 +55,13 @@
   font-family:'DejaVuSans';
 }
 
+.buttonStyleTwo {
+  font-size: 100%;
+  font-family:inherit;
+  border: 0;
+  padding 0;
+}
+
 p {
   font-family:'DejaVuSans';
 }
@@ -64,7 +71,7 @@ h2 {
 }
 
 .popup {
-    padding: 15px 15px;
+    padding: 50px 50px;
     text-align: center;
     position: fixed;
     border: 1px solid black;
