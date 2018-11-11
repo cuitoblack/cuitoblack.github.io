@@ -73,11 +73,12 @@
 }
 
 .control__indicator {
-	position: absolute;
-	top: 2px;
-	left: 0;
-	width: 20px;
-	height: 20px;
+	top: 1px;
+	bottom: 1px;
+	left: 1px;
+	right: 1px;
+	width: 10px;
+	height: 10px;
 	background: #e6e6e6;
 }
 

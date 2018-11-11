@@ -7,3 +7,7 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
+
+function sendEmail() {
+  document.getElementById("successMessage").style.display = "block";
+}
