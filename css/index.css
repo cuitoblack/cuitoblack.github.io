@@ -17,6 +17,7 @@
 
 /* Control the right side */
 .right {
+  z-index: 1;
   right: 0;
   background-color: white;
 }
