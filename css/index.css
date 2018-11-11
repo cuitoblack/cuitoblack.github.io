@@ -63,6 +63,14 @@ h2 {
   font-family:'DejaVuSansBold';
 }
 
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 @font-face {
   font-family:"DejaVuSans";
   src: url("/fonts/DejaVuSansMono.eot"),
