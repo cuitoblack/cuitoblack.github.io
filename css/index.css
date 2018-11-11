@@ -101,7 +101,7 @@ h2 {
 .popup {
     padding: 50px 50px;
     text-align: center;
-    position: fixed;
+    position: absolute;
     border: 1px solid black;
     background-color: white;
     top: 50%;
