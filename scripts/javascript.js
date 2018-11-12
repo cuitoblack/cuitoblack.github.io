@@ -9,8 +9,12 @@ function closeForm() {
 }
 
 function sendEmail() {
+  var subject = "Testing";
+  var body = "More of the same";
+
   if (document.getElementById("attitude").value != "kak")
   {
+    window.open('mailto:cuito@blackmajor.co.za?subject=subject&body=body');
     document.getElementById("successMessage").style.visibility = "visible";
   }
   else
