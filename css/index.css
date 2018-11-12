@@ -17,7 +17,6 @@
 
 /* Control the right side */
 .right {
-  z-index: 1;
   right: 0;
   background-color: white;
 }
@@ -100,7 +99,7 @@ h2 {
 }
 
 .popup {
-    z-index: 10;
+    z-index: 3;
     padding: 50px 50px;
     text-align: center;
     position: fixed;
