@@ -1,11 +1,23 @@
 function openForm() {
-  console.log("hello nooms");
   document.getElementById("myForm").style.display = "block";
-  console.log("breakfast");
 }
 
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
+}
+
+function swopScreens() {
+  if (document.getElementById("toTheRight").style.zIndex == "2"){
+	console.log("inside1");
+	document.getElementById("toTheLeft").style.zIndex = "2";
+	document.getElementById("toTheRight").style.zIndex = "1";
+	console.log("inside2");
+  }else{
+	console.log("inside3");
+	document.getElementById("toTheRight").style.zIndex = "2";
+	document.getElementById("toTheLeft").style.zIndex = "1";
+	console.log("inside4");
+  }
 }
 
 function sendEmail() {
@@ -15,10 +27,12 @@ function sendEmail() {
   if (document.getElementById("attitude").value != "kak")
   {
     window.open('mailto:cuito@blackmajor.co.za?subject=subject&body=body');
+    document.getElementById("kakMessage").style.visibility = "hidden";
     document.getElementById("successMessage").style.visibility = "visible";
   }
   else
   {
+    document.getElementById("successMessage").style.visibility = "hidden";
     document.getElementById("kakMessage").style.visibility = "visible";
   }
 }
