@@ -9,22 +9,32 @@ function closeForm() {
 }
 
 function sendEmail() {
-  document.getElementById("successMessage").style.visibility = "visible";
+  if (document.getElementById("attitude").value != "kak")
+  {
+    document.getElementById("successMessage").style.visibility = "visible";
+  }
+  else
+  {
+    
+  }
 }
 
 function chooseKak() {
+  document.getElementById("attitude").value = "kak";
   document.getElementById("lekker").style.backgroundColor = "white";
   document.getElementById("kaklekker").style.backgroundColor = "white";
   document.getElementById("kak").style.backgroundColor = "black";
 }
 
 function chooseLekker() {
+  document.getElementById("attitude").value = "lekker";
   document.getElementById("kak").style.backgroundColor = "white";
   document.getElementById("kaklekker").style.backgroundColor = "white";
   document.getElementById("lekker").style.backgroundColor = "black";
 }
 
 function chooseKakLekker() {
+  document.getElementById("attitude").value = "kaklekker";
   document.getElementById("lekker").style.backgroundColor = "white";
   document.getElementById("kak").style.backgroundColor = "white";
   document.getElementById("kaklekker").style.backgroundColor = "black";
