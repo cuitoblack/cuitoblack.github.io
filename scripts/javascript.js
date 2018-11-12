@@ -15,7 +15,7 @@ function sendEmail() {
   }
   else
   {
-    
+    document.getElementById("kakMessage").style.visibility = "visible";
   }
 }
 
