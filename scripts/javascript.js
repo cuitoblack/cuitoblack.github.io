@@ -5,17 +5,28 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
-
+var counter = 1;
 function swopScreens() {
+  counter++;
+  if (counter % 2 == 0){
+	document.getElementById("toTheRight").style.zIndex = "1";
+	document.getElementById("toTheLeft").style.zIndex = "2";
+  }else{
+	document.getElementById("toTheLeft").style.zIndex = "1";
+	document.getElementById("toTheRight").style.zIndex = "2";
+  }
+}
+
+function swopToRight() {
   if (document.getElementById("toTheRight").style.zIndex == "2"){
 	console.log("inside1");
-	document.getElementById("toTheLeft").style.zIndex = "2";
 	document.getElementById("toTheRight").style.zIndex = "1";
+	document.getElementById("toTheLeft").style.zIndex = "2";
 	console.log("inside2");
   }else{
-	console.log("inside3");
-	document.getElementById("toTheRight").style.zIndex = "2";
+	console.log(document.getElementById("toTheRight").style.zIndex);
 	document.getElementById("toTheLeft").style.zIndex = "1";
+	document.getElementById("toTheRight").style.zIndex = "2";
 	console.log("inside4");
   }
 }
