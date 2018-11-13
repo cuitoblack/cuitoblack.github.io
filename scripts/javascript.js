@@ -5,6 +5,16 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
+
+function openTheBoringStuff() {
+  document.getElementById("teesAndCees").style.display = "block";
+  document.getElementById("teesAndCees").style.zIndex = "4";
+}
+
+function closeTheBoringStuff() {
+  document.getElementById("teesAndCees").style.display = "none";
+}
+
 var counter = 1;
 function swopScreens() {
   counter++;
