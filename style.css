@@ -1,0 +1,23 @@
+p {
+  color: #FFF;
+  font-family: 'Ruda', sans-serif;
+  font-size: 70px;
+  font-weight: 900;
+  margin: 0;
+  padding-top: 120px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#main {
+  border-style: solid;
+}
+
+#email {
+  border-style: solid;
+}
+
+#socialMediaLinks {
+  border-style: solid;
+}
+
