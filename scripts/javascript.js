@@ -31,15 +31,22 @@ function swopToRight() {
   }
 }
 
-function sendEmail() {
-  var subject = "Testing";
-  var body = "More of the same";
+function phpRequest(){
+    var x = new XMLHttpRequest();
+    var email = document.getElementById("email").value;
+    console.log(email);
+    var url = "function.php?address=" + email;
+    x.open("GET",url,true);
+    x.send();
+    return false;
+}
 
+function sendEmail() {
   if (document.getElementById("attitude").value != "kak")
   {
-    window.open('mailto:cuito@blackmajor.co.za?subject=subject&body=body');
     document.getElementById("kakMessage").style.visibility = "hidden";
     document.getElementById("successMessage").style.visibility = "visible";
+    phpRequest();
   }
   else
   {
