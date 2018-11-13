@@ -1,6 +1,6 @@
 <?php 
-$errors = '';
-$myemail = 'cuito@blackmajor.co.za';//<-----Put Your email address here.
+$errors = "";
+$myemail = "cuito@blackmajor.co.za";//<-----Put Your email address here.
 
 $email_address = $_POST['address']; 
 

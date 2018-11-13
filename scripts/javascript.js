@@ -36,8 +36,11 @@ function phpRequest(){
     var email = document.getElementById("email").value;
     console.log(email);
     var url = "function.php?address=" + email;
+    console.log(url);
     x.open("GET",url,true);
+    console.log("get");
     x.send();
+    console.log("send");
     return false;
 }
 
