@@ -1,7 +1,3 @@
-var clientId = "998886148328-hg74i64q5vqug41vgabresp50can245j.apps.googleusercontent.com";
-var apiKey = "AIzaSyCBJ3_NT6AqjhTPy7aVe6LuziRwxO8CHjM";
-var scopes = "https://www.googleapis.com/auth/gmail.readonly " + "https://www.googleapis.com/auth/gmail.send";
-
 function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
