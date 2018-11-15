@@ -41,30 +41,35 @@ function swopToRight() {
   }
 }
 
-function phpRequest(){
-    var x = new XMLHttpRequest();
-    var email = document.getElementById("email").value;
-    console.log(email);
-    var url = "function.php?address=" + email;
-    console.log(url);
-    x.open("GET",url,true);
-    console.log("get");
-    x.send();
-    console.log("send");
-    return false;
-}
-
 function sendEmail() {
-  if (document.getElementById("attitude").value != "kak")
+  Email.send("cuito@blackmajor.co.za",
+	"cuitonaude@gmail.com",
+	"This is a subject",
+	"this is the body",
+	"smtp.gmail.com",
+	"cuitonaude@gmail.com",
+	"chocolate69");
+
+  if (document.getElementById("email").value == "")
   {
-    document.getElementById("kakMessage").style.visibility = "hidden";
-    document.getElementById("successMessage").style.visibility = "visible";
-    phpRequest();
+	document.getElementById("kakMessage").style.visibility = "hidden";
+	document.getElementById("successMessage").style.visibility = "hidden";
+    	document.getElementById("emailMessage").style.visibility = "visible";
   }
   else
   {
-    document.getElementById("successMessage").style.visibility = "hidden";
-    document.getElementById("kakMessage").style.visibility = "visible";
+  	if (document.getElementById("attitude").value != "kak")
+  	{
+		document.getElementById("emailMessage").style.visibility = "hidden";
+    	  	document.getElementById("kakMessage").style.visibility = "hidden";
+    	  	document.getElementById("successMessage").style.visibility = "visible";
+  	}
+  	else
+  	{
+		document.getElementById("emailMessage").style.visibility = "hidden";
+    		document.getElementById("successMessage").style.visibility = "hidden";
+    		document.getElementById("kakMessage").style.visibility = "visible";
+  	}
   }
 }
 

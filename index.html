@@ -14,6 +14,7 @@
   <link rel="stylesheet" type="text/css" href="css/master_a-master.css"/>
   <link rel="stylesheet" type="text/css" href="css/index.css" id="pagesheet"/>
   <script type="text/javascript" src="scripts/javascript.js"></script>
+  <script type="text/javascript" src="scripts/smtp.js"></script>
    </head>
 
   <script type="text/javascript"> 
@@ -103,7 +104,7 @@
                 </br>
 		</br>
 		<div style="border-bottom: 1px solid black;">
-		  <input type="text" name="email" id="email" placeholder="insert email" style="display:inline;"><button type="button" class="buttonStyleTwo" onclick="sendEmail()" style="display:inline;">SEND</button>
+		  <input type="text" name="email" id="email" placeholder="insert email" style="display:inline;"><input class="buttonStyleTwo" onclick="sendEmail()" style="display:inline;right: 0;" value="SEND">
 		</div>
 		<input type="text" id="attitude" name="attitude" style="display:none;">
 		</br>
@@ -114,6 +115,7 @@
 		</br>
 		<p id="successMessage" style="text-align:center;visibility:hidden;">DONE! CHECK YOUR INBOX</p>
 		<p id="kakMessage" style="text-align:center;visibility:hidden;">DON'T BE KAK, BE LEKKER</p>
+		<p id="emailMessage" style="text-align:center;visibility:hidden;">PLEASE ENTER AN EMAIL ADDRESS</p>
 		</br>
         </div>
 
